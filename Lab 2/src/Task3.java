@@ -4,7 +4,8 @@ public class Task3 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in); //Read user input using type "Scanner"
         System.out.print("Enter 1st string: ");
-        String s1 = input.next(); //Catch input 1, we can use ".next()" for string
+        String s1 = input.next(); //Catch input 1,
+        // we can use ".next()" for only the first word of string, otherwise ".nextLine()" is better to catch the whole string
         int len1 = s1.length(); //Calculate length of string using ".length()"
         System.out.print("Enter 2nd string: ");
         String s2 = input.next(); //Catch input 2
