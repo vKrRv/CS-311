@@ -4,13 +4,16 @@ public class Students {
     String lastName;
     int birthDate;
     private double GPA;
+    public static int studCounter;
 
     //Constructors:
     Students(){
+        studCounter++;
         ID = ""; firstName = ""; lastName = ""; birthDate = 2005; GPA = 0.0;
     }
     Students(String newID, String newFirstName, String newLastName
             , int newBirthDate, double newGPA){
+        studCounter++;
         ID = newID; firstName = newFirstName; lastName = newLastName;
         birthDate = newBirthDate; GPA = newGPA;
     }
