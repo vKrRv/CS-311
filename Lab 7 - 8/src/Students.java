@@ -1,5 +1,5 @@
 public class Students {
-    public String ID;
+    public String id;
     String firstName;
     String lastName;
     int birthDate;
@@ -9,24 +9,24 @@ public class Students {
     //Constructors:
     Students(){
         studCounter++;
-        ID = ""; firstName = ""; lastName = ""; birthDate = 2005; GPA = 0.0;
+        id = ""; firstName = ""; lastName = ""; birthDate = 2005; GPA = 0.0; studCounter++;
     }
-    Students(String newID, String newFirstName, String newLastName
-            , int newBirthDate, double newGPA){
+    Students(String id, String firstName, String lastName
+            , int birthDate, double GPA){
         studCounter++;
-        ID = newID; firstName = newFirstName; lastName = newLastName;
-        birthDate = newBirthDate; GPA = newGPA;
+        this.id = id; this.firstName = firstName; this.lastName = lastName;
+        this.birthDate = birthDate; this.GPA = GPA; studCounter++;
     }
 
     //Setters:
-    public void setID(String newID){ ID = newID;}
-    public void setFirstName(String newFirstName){ firstName = newFirstName;}
-    public void setLastName(String newLastName){ lastName = newLastName;}
-    public void setBirthDate(int newBirthDate){ birthDate = newBirthDate;}
-    public void setGPA(double newGPA){ GPA = newGPA;}
+    public void setId(String id){ this.id = id;}
+    public void setFirstName(String firstName){ this.firstName = firstName;}
+    public void setLastName(String lastName){ this.lastName = lastName;}
+    public void setBirthDate(int birthDate){ this.birthDate = birthDate;}
+    public void setGPA(double GPA){ this.GPA = GPA;}
 
     //Getters:
-    public String getID(){ return ID;}
+    public String getId(){ return id;}
     public String getFirstName(){ return firstName;}
     public String getLastName(){ return lastName;}
     public int getBirthDate(){ return birthDate;}
